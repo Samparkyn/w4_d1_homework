@@ -1,0 +1,20 @@
+<div class="add_new_pet">
+
+  <h2>Add a New Pet</h2>
+
+  <form action="/pets" method="post">
+    <input type="hidden" name="store_id" value="<%= @store.id %>">
+
+    <label for="name">Name:<br> </label>
+    <input type="text" name="name"><br>
+
+    <label for="species">Species:<br> </label>
+    <input type="text" name="species"><br>
+
+    <label for="image_url">Image URL:<br> </label>
+    <input type="text" name="image_url"><br>
+
+    <input type='submit' value="Add Pet">
+  </form>
+
+</div>
